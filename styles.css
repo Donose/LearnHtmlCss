@@ -34,7 +34,6 @@ a[target] {
   font-size: 1.5rem;
   color: #fff;
   font-weight: 500;
-  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   line-height: 75px;
@@ -69,7 +68,7 @@ a[target] {
   animation: pulse 2s infinite;
 }
 
-@-webkit-keyframes pulse {
+/* @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 47, 255, 0.4);
   }
@@ -79,7 +78,7 @@ a[target] {
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
   }
-}
+} */
 
 .navbar-links {
   color: #fff;
@@ -107,6 +106,9 @@ a[target] {
     width: 100%;
     max-width: 1300px;
     padding: 0;
+  }
+  .navbar-logo {
+    padding: 0 25px;
   }
   .item-list {
     display: grid;
@@ -181,7 +183,7 @@ a[target] {
   display: none;
 }
 .number-text {
-  color: #f2f2f2;
+  color: #000000;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -322,4 +324,236 @@ a[target] {
     padding: 12px 36px;
     margin: 2.5rem;
   }
+}
+/* Specs page */
+.content-container {
+  width: 800px;
+  height: auto;
+  margin-left: auto;
+  margin-right: 1300px;
+}
+.games {
+  width: 800px;
+  height: auto;
+  padding-left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-container p:first-child {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 20px;
+  background-color: #180ada;
+  background-image: linear-gradient(
+    to right,
+    #cc1313c4 0%,
+    rgba(224, 39, 39, 0.315) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.content-container p:last-child {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+}
+/* .games-images {
+  display: flex;
+} */
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g {
+  padding: 0 1rem;
+  position: relative;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 10s;
+  width: 100px;
+  height: auto;
+}
+/* Artificiu vizual...*/
+@-webkit-keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 25%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+/* .a:hover,
+.b:hover,
+.c:hover,
+.d:hover,
+.e:hover,
+.f:hover,
+.g:hover {
+  display: flex;
+  width: 200px;
+  height: 130px;
+} */
+.playstation {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playstation p:last-child {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.specs-container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.image-ps {
+  align-items: center;
+  display: flex;
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image {
+  width: 200px;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.vip,
+.pc,
+.peripherals {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+}
+
+/* Mobile specs page*/
+@media screen and (max-width: 960px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+  }
+  .content-container {
+    font-size: 1rem;
+    display: grid;
+    justify-content: space-between;
+  }
+  .games-images {
+    display: flex;
+  }
+  .a,
+  .b,
+  .c,
+  .d,
+  .e,
+  .f,
+  .g {
+    -webkit-animation-name: none;
+    padding-left: auto;
+  }
+
+  .specs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Prices page */
+.price-container {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.price-items {
+  list-style: none;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #fff;
+}
+.price-links {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Contact page */
+.social_media-container {
+  width: 500px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.social_media-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_media-item {
+  list-style: none;
+  align-items: center;
+}
+.contact-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-text p:first-child {
+  padding-top: 50px;
+  padding-right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  background-color: #180ada;
+  background-image: linear-gradient(
+    to right,
+    #cc1313c4 0%,
+    rgba(224, 39, 39, 0.315) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.contact-text p:last-child {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 100%;
+  bottom: 150%;
+}
+.location-placeholder {
+  width: 900px;
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.placeholder-image {
+  width: 100%;
 }
